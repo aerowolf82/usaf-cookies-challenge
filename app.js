@@ -5,9 +5,6 @@ const port = 3000
 const cookieParser = require('cookie-parser')
 
 
-// Set a cookie when routed to /login with name.
-// If a cookie is present with a name key, "Welcome {name}! when the user routes to /hello".
-
 app.use(cookieParser())
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true }));
